@@ -1,0 +1,136 @@
+:root{
+    --front-end-color: rgba(245, 59, 223, 0.59);
+    --back-end-color: rgba(177, 59, 245, 0.59);
+    --front-end-hover-color:rgba(245, 59, 223, 1);
+    --back-end-hover-color:rgba(177, 59, 245, 1);
+    --hover-width: 75%;
+    --other-width: 25%;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto Sans', sans-serif;
+
+
+}
+
+
+.project-page{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+.front{
+    width: 50%;
+    height: 100vh;
+    transition: all .4s ease-in-out;
+
+
+}
+
+.front-end .btn:hover{
+    background-color: var(--front-end-hover-color);
+    border-color: transparent;
+}
+.front-end-empty-container{
+    background-color: var(--front-end-color);
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width:50% ;
+    height: 100%;
+    transition: all .4s ease-in-out;
+
+}
+
+
+.front-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: no-repeat center/cover url(image/frontend-nedir.png);
+   /* transition: transform .5s ease;
+*/}
+
+.back{
+    width: 50%;
+    height: 100vh;
+    transition: all .4s ease-in-out;
+
+
+}
+
+.back-end .btn:hover{
+    background-color: var(--back-end-hover-color);
+    border-color: transparent;
+}
+
+.back-end-empty-container{
+    background-color: var(--back-end-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 50%;
+    transition: all .4s ease-in-out;
+
+}
+
+.back-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center/cover url(image/backend-image.png);
+
+}
+
+.btn{
+    border: 2px solid white;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px black;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    z-index: 10000000;
+}
+
+.front-end h1,
+.back-end h1{
+    z-index: 10000000;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}

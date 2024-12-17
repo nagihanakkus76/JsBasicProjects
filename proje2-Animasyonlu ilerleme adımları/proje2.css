@@ -1,0 +1,71 @@
+:root{
+    --line-border-empty:#dee2e6;
+    --line-border-fill:#ff4d6d;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+  text-align: center;
+}
+
+.progress-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+    width: 500px;
+    max-width: 100%;   
+}
+
+.progress{
+    width: 100%;
+    height: 0;
+    border: 3px solid var(--line-border-empty);
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid var(--line-border-empty);
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.active{
+    border-color: var(--line-border-fill);
+}
+
+.btn{
+    padding: 10px 30px;
+    margin: 10px;
+    border: 1px solid var(--line-border-empty);
+    border-radius: 10px;
+    background-color: var(--line-border-empty);
+    color: white;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+.btn.active{
+    border: 1px solid var(--line-border-fill);
+    background-color: var(--line-border-fill);
+    
+}
